@@ -1,97 +1,161 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--<link rel="stylesheet" href="./css/reset.css" />-->
+    <link rel="stylesheet" href="./css/reset.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./css/reset.css" />
-  <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
 
-  <title>Equipo Cabra</title>
-</head>
+    <title>Equipo Cabra</title>
 
-<body>
-  <header>
-    <!--imagen de fondo de la cabecera(background)-->
-    <div id="nombredelequipo">
-      <h1>Nombre de equipo</h1>
-    </div>
-    <div class="container">
-      <nav id="enlaces">
-        <ul>
-          <li><a href="./index.html#equipo" class="box">Equipo</a></li>
-          <li><a href="./index.html#quienessomos" class="box">Quiénes somos</a></li>
-          <li><a href="./contacto.html" target="blank" class="box">Contacto</a></li>
-        </ul>
+    <style type="text/css" media="screen, print">
+      @font-face {
+        font-family: "Rubik";
+        src: url("./css/Rubik-Medium.ttf");
+      }
+      body {
+        font-family: "Rubik";
+      }
+    </style>
+    <!--se puede poner en css?-->
+    <style type="text/css">
+      a {
+        color: #fffcfd;
+      }
+      a:visited {
+        color: #fff9fd;
+      }
+      a:active {
+        color: #fcfcfc;
+      }
+      a:hover {
+        color: #fdfdfd;
+      }
+    </style>
+  </head>
 
+  <body>
+    <header class="header">
+      <!--imagen de fondo de la cabecera(background)-->
+      <div class="nombredelequipo">
+        <h1>Nombre de equipo</h1>
+      </div>
 
-    </div>
-    </nav>
-  </header>
-  <main>
-    <section>
-      <h2 class="lema">Frase con nuestro lema</h2>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur obcaecati unde nemo eum architecto,
-      aspernatur illum autem porro molestias eveniet, in sit soluta, incidunt illo beatae earum hic voluptates
-      ipsam!Lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda magnam, fugiat aliquam velit
-      commodi facilis, libero officia quo eius numquam nihil pariatur mollitia explicabo? Ex repellendus delectus a
-      repellat vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit neque quas possimus architecto veniam
-      obcaecati sequi! Quasi nobis ea voluptates assumenda quia eius fuga illum non quis, harum quisquam ipsam!
-    </section>
-    <section>
-      <h1 id="equipo">Equipo</h1>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum libero tenetur placeat id nemo, aut sed consequatur
-      expedita eum ex asperiores adipisci. Aut odit accusamus natus necessitatibus ipsa tempore recusandae!
-    </section>
-    <section>
-      <h2>Fortalezas</h2>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum libero tenetur placeat id nemo, aut sed consequatur
-      expedita eum ex asperiores adipisci. Aut odit accusamus natus necessitatibus ipsa tempore
-      <h2>Debilidades</h2>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum libero tenetur placeat id nemo, aut sed consequatur
-      expedita eum ex asperiores adipisci. Aut odit accusamus natus necessitatibus ipsa tempore
-    </section>
+      <nav class="enlaces">
+        <!--se puede poner en css?-->
+        <style>
+          A {
+            text-decoration: none;
+          }
+        </style>
+        <a href="./index.html#equipo" class="box">Equipo</a>
 
-    <section>
-      <h1 id="quienessomos">Quiénes somos</h1>
-      <img src="./images/FotoMai.jpg" alt="fotomai">
+        <a href="./index.html#quienessomos" class="box">Quiénes somos</a>
 
-      Maitane
-      <!--descripción de Mai-->
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum libero tenetur placeat id nemo, aut sed consequatur
-      expedita eum ex asperiores adipisci. Aut odit accusamus natus necessitatibus ipsa tempore
-      <!--Redes sociales-->
-      <img src="" alt="fotoana">
-      Ana
-      <!--descripción de Ana-->
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum libero tenetur placeat id nemo, aut sed consequatur
-      expedita eum ex asperiores adipisci. Aut odit accusamus natus necessitatibus ipsa tempore
-      <!--Redes sociales-->
-      <img src="./images/fotoperfilpaloma.jpg" alt="Paloma">
-      Paloma
-      <!--descripción de Paloma-->
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum libero tenetur placeat id nemo, aut sed consequatur
-      expedita eum ex asperiores adipisci. Aut odit accusamus natus necessitatibus ipsa tempore
-      <!--Redes sociales-->
-      <img src="./images/IreneGonzalezPinilla.jpg" alt="Irene"/>
-      Irene
-      <!--descripción de Irene-->
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum libero tenetur placeat id nemo, aut sed consequatur
-      expedita eum ex asperiores adipisci. Aut odit accusamus natus necessitatibus ipsa tempore
-    </section>
+        <a href="./contacto.html" target="blank" class="box">Contacto</a>
+      </nav>
+    </header>
+    <main class="cuerpo">
+      <section>
+        <h2 class="lema">Frase con nuestro lema</h2>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur
+        obcaecati unde nemo eum architecto, aspernatur illum autem porro
+        molestias eveniet, in sit soluta, incidunt illo beatae earum hic
+        voluptates ipsam!Lorem Lorem ipsum dolor, sit amet consectetur
+        adipisicing elit. Assumenda magnam, fugiat aliquam velit commodi
+        facilis, libero officia quo eius numquam nihil pariatur mollitia
+        explicabo? Ex repellendus delectus a repellat vero. Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Odit neque quas possimus
+        architecto veniam obcaecati sequi! Quasi nobis ea voluptates assumenda
+        quia eius fuga illum non quis, harum quisquam ipsam!
+      </section>
+      <section>
+        <h1 id="equipo">Equipo</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum libero
+        tenetur placeat id nemo, aut sed consequatur expedita eum ex asperiores
+        adipisci. Aut odit accusamus natus necessitatibus ipsa tempore
+        recusandae!
+      </section>
+      <section>
+        <h2>Fortalezas</h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum libero
+        tenetur placeat id nemo, aut sed consequatur expedita eum ex asperiores
+        adipisci. Aut odit accusamus natus necessitatibus ipsa tempore
+        <h2>Debilidades</h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum libero
+        tenetur placeat id nemo, aut sed consequatur expedita eum ex asperiores
+        adipisci. Aut odit accusamus natus necessitatibus ipsa tempore
+      </section>
 
-  </main>
-  <footer>
-    <h4>Nombre del grupo &copy;2018 </h4>
-    <div>
-      <h5><a href="./index.html#equipo" class="box">Equipo</a></h5>
-      <h5><a href="./index.html#quienessomos" class="box">Quiénes somos</a></h5>
-      <h5><a href="./contacto.html" target="blank" class="box">Contacto</a></h5>
-    </div>
-    <img class="logo" src="" alt="logo Adalab" />
+      <section class="quienessomos">
+        <h1>Quiénes somos</h1>
+        <article>
+          <img class="photo" src="./images/FotoMai.jpg" alt="fotomai" />
 
-  </footer>
-</body>
+          <h2>Maitane</h2>
+          <!--descripción de Mai-->
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+            libero tenetur placeat id nemo, aut sed consequatur expedita eum ex
+            asperiores adipisci. Aut odit accusamus natus necessitatibus ipsa
+            tempore
+          </p>
+          <!--Redes sociales-->
+        </article>
+        <article>
+          <img class="photo" src="" alt="fotoana" />
+          <h2>Ana</h2>
+          <!--descripción de Ana-->
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+            libero tenetur placeat id nemo, aut sed consequatur expedita eum ex
+            asperiores adipisci. Aut odit accusamus natus necessitatibus ipsa
+            tempore
+          </p>
+          <!--Redes sociales-->
+        </article>
+        <article>
+          <img class="photo" src="./images/fotoperfilpaloma.jpg" alt="Paloma" />
+          <h2>Paloma</h2>
+          <!--descripción de Paloma-->
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+            libero tenetur placeat id nemo, aut sed consequatur expedita eum ex
+            asperiores adipisci. Aut odit accusamus natus necessitatibus ipsa
+            tempore
+          </p>
+          <!--Redes sociales-->
+        </article>
+        <article>
+          <img class="photo" src="./images/FotoIre.jpg" alt="Irene" />
+          <h2>Irene</h2>
+          <!--descripción de Irene-->
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+            libero tenetur placeat id nemo, aut sed consequatur expedita eum ex
+            asperiores adipisci. Aut odit accusamus natus necessitatibus ipsa
+            tempore
+          </p>
+        </article>
+      </section>
+    </main>
 
+    <footer>
+      <hr />
+      <h4>Nombre del grupo &copy;2018</h4>
+      <div>
+        <h5><a href="./index.html#equipo" class="box">Equipo</a></h5>
+        <h5>
+          <a href="./index.html#quienessomos" class="box">Quiénes somos</a>
+        </h5>
+        <h5>
+          <a href="./contacto.html" target="blank" class="box">Contacto</a>
+        </h5>
+      </div>
+      <img class="logo" src="" alt="logo Adalab" />
+    </footer>
+  </body>
 </html>

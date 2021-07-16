@@ -1,0 +1,39 @@
+.header {
+  max-width: 768px;
+}
+.nombredelequipo {
+  display: flex;
+
+  justify-content: center;
+  font-size: 16px;
+  color: white;
+  background-color: #099d8d;
+  font-family: rubik;
+  text-transform: uppercase;
+}
+
+.enlaces {
+  text-decoration: none;
+  display: flex;
+
+  justify-content: space-around;
+  width: 100%;
+  font-size: 16px;
+  color: white;
+  background-color: aqua;
+  font-family: rubik;
+  text-transform: uppercase;
+}
+.cuerpo {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.quienessomos {
+  text-align: center;
+}
+
+.photo {
+  width: 180px;
+  height: 180px;
+}
