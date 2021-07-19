@@ -10,19 +10,19 @@
 }
 .header {
   background-image: url(../images/altavoz-barato-1-2-3.webp);
+
   width: 100%;
-  height: 420px;
+  height: 421px;
   background-position: center;
 }
 .equipo {
   display: flex;
-  padding: 0px 86.5px 0px;
+  padding: 0px 86.5px 15px;
   font-family: "rubik", sans-serif;
   font-size: 24px;
   line-height: var(--interlineadotexto);
   justify-content: center;
   color: aqua;
-  text-transform: uppercase;
 }
 .equipo1 {
   display: flex;
@@ -40,6 +40,7 @@ body {
 }
 .lema_titulo {
   display: flex;
+  font-size: 18px;
   justify-content: center;
   background-color: white;
   padding: 14px 15px 16px;
@@ -48,19 +49,18 @@ body {
   font-weight: 600;
   text-align: center;
   position: relative;
-  top: -30px;
+  top: -40px;
   width: 85%;
   right: 4%;
-  left: 5%;
+  left: 3%;
 }
 .textoequipo {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 30px 15px 0px;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  line-height: var(--interlineadotexto);
+  padding: 30px 15px 90px;
 }
 .nombredelequipo {
   display: flex;
