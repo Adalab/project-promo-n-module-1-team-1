@@ -1,30 +1,79 @@
+:root {
+  --alineado: center;
+  --colortitulo2: #099d8d;
+  --colortitulo2-1: rgba(9, 157, 141, 0.95);
+  --interlineadotitulo: 45px;
+  --colortexto: #54585a;
+  --interlineadotexto: 24px;
+  --coolgrey: #b8b8b9;
+  --coolgrey-light: rgba(184, 184, 185, 0.2);
+}
 .header {
   max-width: 768px;
+  background-image: url(../images/altavoz-barato-1-2-3.webp);
+  width: 100%;
+  height: 420px;
+}
+body {
+  text-align: var(--alineado);
+}
+.lema_titulo {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
 }
 .nombredelequipo {
   display: flex;
-
+  flex-direction: column;
   justify-content: center;
-  font-size: 16px;
-  color: white;
-  background-color: #099d8d;
+  height: 60px;
+  width: 100%;
+
+  background-color: var(--colortitulo2-1);
   font-family: rubik;
   text-transform: uppercase;
 }
-
+.nombre {
+  font-size: 16px;
+  color: white;
+}
 .enlaces {
   text-decoration: none;
   display: flex;
 
   justify-content: space-around;
   width: 100%;
+  height: 45px;
   font-size: 16px;
   color: white;
-  background-color: aqua;
+  background-color: rgba(0, 255, 255, 0.9);
   font-family: rubik;
   text-transform: uppercase;
+  align-items: center;
 }
-.cuerpo {
+.box {
+}
+.fortalezas {
+  margin: 50px 0 0;
+  padding: 30px 15px 45px;
+  background-color: var(--coolgrey-light);
+  text-align: var(--alineado);
+}
+
+.articulo {
+  height: 50%;
+}
+.title {
+  border: solid 1px black;
+  display: inline-block;
+  font-size: 22px;
+  color: var(--colortitulo2);
+  line-height: var(--interlineadotitulo);
+}
+.parrafo {
+  font-size: 16px;
+  color: var(--colortexto);
+  line-height: var(--interlineadotexto);
   margin-left: 15px;
   margin-right: 15px;
 }
@@ -36,4 +85,35 @@
 .photo {
   width: 180px;
   height: 180px;
+}
+.footer {
+  display: block;
+  height: 250px;
+  margin: 250px 0 0;
+  padding: 30px 74px 45px;
+  border: solid 1px var(--coolgrey);
+  background-color: white;
+  text-align: var(--alineado);
+}
+.copy {
+  color: var(--coolgrey);
+  height: 20px;
+  font-family: openSans;
+  font-size: 14px;
+  line-height: 20px;
+}
+.navegadorfooter {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 29px 30px;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  color: var(--colortexto);
+  opacity: 0.75;
+  text-transform: uppercase;
+  line-height: 20px;
+  color: var(--colortexto);
 }
