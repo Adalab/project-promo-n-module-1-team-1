@@ -4,41 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Rubik&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
       rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
     />
 
     <!--<link rel="stylesheet" href="./css/reset.css" />-->
-    <link rel="stylesheet" href="./css/reset.css" />
 
     <link rel="stylesheet" href="./css/style.css" />
 
     <title>Equipo Cabra</title>
-
-    <style type="text/css" media="screen, print">
-      @font-face {
-        font-family: "Rubik";
-        src: url("./css/Rubik-Medium.ttf");
-      }
-      body {
-        font-family: "Rubik";
-      }
-    </style>
-    <!--/IRENE/He eliminado el style que había para suplir el estilo de los enlaces y que no saliesen en azul modificando el color en el reset.css con color: "inherit" también he quitado las líneas de hipervínculo incluyéndolas al reset-->
   </head>
 
   <body>
     <header class="header">
-      <!--imagen de fondo de la cabecera(background)-->
       <div class="nombredelequipo">
         <h1 class="nombre">Nombre de equipo</h1>
       </div>
@@ -53,22 +41,21 @@
     </header>
     <main class="cuerpo">
       <section class="lema">
-        <h2 class="lema_titulo">Frase con nuestro lema</h2>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur
-        obcaecati unde nemo eum architecto, aspernatur illum autem porro
-        molestias eveniet, in sit soluta, incidunt illo beatae earum hic
-        voluptates ipsam!Lorem Lorem ipsum dolor, sit amet consectetur
-        adipisicing elit. Assumenda magnam. sit amet consectetur adipisicing
-        elit. Odit neque quas possimus architecto veniam obcaecati sequi! Quasi
-        nobis ea voluptates assumenda quia eius fuga illum non quis, harum
-        quisquam ipsam!
+        <h2 class="lema_titulo">
+          Si quieres ir rápido, ve solo. Si quieres llegar lejos, ve acompañado.
+        </h2>
       </section>
-      <section>
-        <h1 id="equipo">Equipo</h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum libero
-        tenetur placeat id nemo, aut sed consequatur expedita eum ex asperiores
-        adipisci. Aut odit accusamus natus necessitatibus ipsa tempore
-        recusandae!
+      <section class="equipo1">
+        <h1 class="equipo">Equipo</h1>
+        <p class="textoequipo">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum libero
+          tenetur placeat id nemo, aut sed consequatur expedita eum ex
+          asperiores adipisci. Aut odit accusamus natus necessitatibus ipsa
+          tempore recusandae! Lorem ipsum, dolor sit amet consectetur
+          adipisicing elit. Ipsam animi repellendus aperiam necessitatibus
+          iusto, possimus labore odio, nisi ut corporis ea suscipit repellat
+          praesentium. Culpa labore beatae possimus consequuntur optio.
+        </p>
       </section>
       <section class="fortalezas">
         <!--/IRENE/Falata redactar y solucionar el problema de la opacidad heredada-->
@@ -94,53 +81,81 @@
 
       <section class="quienessomos">
         <h1>Quiénes somos</h1>
-        <article>
+        <article class="description">
           <img class="photo" src="./images/FotoMai.jpg" alt="fotomai" />
 
-          <h2>Maitane</h2>
+          <h2 class="names">Maitane Abad</h2>
           <!--descripción de Mai-->
-          <p>
+          <p class="text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
             libero tenetur placeat id nemo, aut sed consequatur expedita eum ex
             asperiores adipisci. Aut odit accusamus natus necessitatibus ipsa
             tempore
           </p>
-          <!--Redes sociales-->
+
+          <div class="icons">
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-github-alt"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fas fa-envelope-square"></i>
+          </div>
         </article>
-        <article>
+
+        <article class="description">
           <img class="photo" src="" alt="fotoana" />
-          <h2>Ana</h2>
+          <h2 class="names">Ana Redondo</h2>
           <!--descripción de Ana-->
-          <p>
+          <p class="text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
             libero tenetur placeat id nemo, aut sed consequatur expedita eum ex
             asperiores adipisci. Aut odit accusamus natus necessitatibus ipsa
             tempore
           </p>
-          <!--Redes sociales-->
+
+          <div class="icons">
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-github-alt"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fas fa-envelope-square"></i>
+          </div>
         </article>
-        <article>
+
+        <article class="description">
           <img class="photo" src="./images/fotoperfilpaloma.jpg" alt="Paloma" />
-          <h2>Paloma</h2>
+          <h2 class="names">Paloma Lozano</h2>
           <!--descripción de Paloma-->
-          <p>
+          <p class="text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
             libero tenetur placeat id nemo, aut sed consequatur expedita eum ex
             asperiores adipisci. Aut odit accusamus natus necessitatibus ipsa
             tempore
           </p>
-          <!--Redes sociales-->
+
+          <div class="icons">
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-github-alt"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fas fa-envelope-square"></i>
+          </div>
         </article>
-        <article>
+
+        <article class="description">
           <img class="photo" src="./images/FotoIre.jpg" alt="Irene" />
-          <h2>Irene</h2>
+          <h2 class="names">Irene González</h2>
           <!--descripción de Irene-->
-          <p>
+          <p class="text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
             libero tenetur placeat id nemo, aut sed consequatur expedita eum ex
             asperiores adipisci. Aut odit accusamus natus necessitatibus ipsa
             tempore
           </p>
+
+          <div class="icons">
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-github-alt"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fas fa-envelope-square"></i>
+          </div>
         </article>
       </section>
     </main>
@@ -152,8 +167,9 @@
         <a href="./index.html#quienessomos">Quiénes somos</a>
         <a href="./contacto.html" target="blank">Contacto</a>
       </nav>
-      <!--Falta imagen del logo y el cambio de tipografía-->
-      <img class="logo" src="" alt="logo Adalab" />
+      <p>
+        <img class="logo" src="./images/logo-adalab.png" alt="logo Adalab" />
+      </p>
     </footer>
   </body>
 </html>
