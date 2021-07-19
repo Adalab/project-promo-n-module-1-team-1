@@ -16,7 +16,7 @@
 }
 .equipo {
   display: flex;
-  padding: 46px 86.5px 0px;
+  padding: 0px 86.5px 0px;
   font-family: "rubik", sans-serif;
   font-size: 24px;
   line-height: var(--interlineadotexto);
@@ -32,7 +32,6 @@
   font-family: "Rubik", sans-serif;
   height: 384px;
   width: 100%;
-
   line-height: var(--interlineadotexto);
 }
 body {
@@ -51,14 +50,14 @@ body {
   position: relative;
   top: -30px;
   width: 85%;
-  right: 5%;
+  right: 4%;
   left: 5%;
 }
 .textoequipo {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 30px 15px 45px;
+  padding: 30px 15px 0px;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: var(--interlineadotexto);
@@ -93,7 +92,7 @@ body {
 }
 
 .fortalezas {
-  margin: 50px 0 0;
+  margin: 0px 0 0;
   padding: 30px 15px 45px;
   background-color: var(--coolgrey-light);
   text-align: var(--alineado);
