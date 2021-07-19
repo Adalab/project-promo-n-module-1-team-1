@@ -53,6 +53,7 @@ body {
 }
 
 .fortalezas {
+  font-family: "open sans";
   margin: 50px 0 0;
   padding: 30px 15px 45px;
   background-color: var(--coolgrey-light);
@@ -71,8 +72,7 @@ body {
 .fortalezas {
   margin: 50px 0 0;
   padding: 30px 15px 45px;
-  background-color: var(--coolgrey);
-
+  background-color: var(--coolgrey-light);
   text-align: var(--alineado);
 }
 .articulo {
