@@ -122,6 +122,7 @@ body {
 .quienessomos {
   font-family: "Rubik", sans-serif;
   font-size: 24px;
+  font-weight: 600;
   line-height: var(--interlineadotitulo);
   color: var(--colortitulo2);
   display: flex;
