@@ -10,25 +10,24 @@
 }
 .header {
   background-image: url(../images/altavoz-barato-1-2-3.webp);
-
+  background-position: center;
   width: 100%;
   height: 421px;
-  background-position: center;
 }
 .equipo {
   display: flex;
+  justify-content: center;
   padding: 0px 86.5px 15px;
   font-family: "rubik", sans-serif;
   font-size: 24px;
   line-height: var(--interlineadotexto);
-  justify-content: center;
   color: aqua;
 }
 .equipo1 {
   display: flex;
   flex-direction: column;
-  padding: 30px, 15px, 90px;
   justify-content: center;
+  padding: 30px, 15px, 90px;
   font-family: "Rubik", sans-serif;
   height: 384px;
   width: 100%;
@@ -40,17 +39,17 @@ body {
 }
 .lema_titulo {
   display: flex;
-  font-size: 18px;
   justify-content: center;
-  background-color: white;
-  padding: 14px 15px 16px;
-  height: 50px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
   text-align: center;
   position: relative;
+  background-color: white;
+  padding: 14px 15px 16px;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
   top: -40px;
   width: 85%;
+  height: 50px;
   right: 4%;
   left: 3%;
 }
@@ -58,44 +57,43 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 30px 15px 90px;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  padding: 30px 15px 90px;
 }
 .nombredelequipo {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 60px;
-  width: 100%;
   background-color: var(--colortitulo2-1);
   font-family: "Rubik", sans-serif;
   text-transform: uppercase;
+  height: 60px;
+  width: 100%;
 }
 .nombre {
   font-size: 16px;
   color: white;
 }
 .enlaces {
-  text-decoration: none;
   display: flex;
-
   justify-content: space-around;
-  width: 100%;
-  height: 45px;
+  align-items: center;
+  text-decoration: none;
   font-size: 16px;
   color: white;
   background-color: rgba(0, 255, 255, 0.9);
   font-family: "Rubik", sans-serif;
   text-transform: uppercase;
-  align-items: center;
+  width: 100%;
+  height: 45px;
 }
 
 .fortalezas {
+  text-align: var(--alineado);
   margin: 0px 0 0;
   padding: 30px 15px 45px;
   background-color: var(--coolgrey-light);
-  text-align: var(--alineado);
 }
 
 .articulo {
@@ -120,17 +118,17 @@ body {
 }
 
 .quienessomos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-family: "Rubik", sans-serif;
   font-size: 24px;
   font-weight: 600;
   line-height: var(--interlineadotitulo);
   color: var(--colortitulo2);
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
   text-align: center;
-  align-items: center;
   margin: 15px;
 }
 
