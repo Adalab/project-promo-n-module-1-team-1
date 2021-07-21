@@ -12,61 +12,10 @@
 body {
   max-width: 768px;
   text-align: var(--alineado);
+  box-sizing: border-box;
+  text-align: var(--alineado);
 }
-
-.header {
-  background-image: url(../images/altavoz-barato-1-2-3.webp);
-  background-position: center;
-  width: 100%;
-  height: 421px;
-}
-
-.equipo {
-  display: flex;
-  justify-content: center;
-  padding: 0px 86.5px 15px;
-  font-family: "rubik", sans-serif;
-  font-size: 24px;
-  line-height: var(--interlineadotexto);
-  color: aqua;
-}
-
-.equipo1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 30px, 15px, 90px;
-  font-family: "Rubik", sans-serif;
-  width: 100%;
-  line-height: var(--interlineadotexto);
-}
-
-.lema_titulo {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  position: relative;
-  background-color: white;
-  padding: 14px 15px 16px;
-  font-size: 18px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-  top: -40px;
-  width: 85%;
-  height: 50px;
-  right: 4%;
-  left: 3%;
-}
-
-.textoequipo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 30px 15px 90px;
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-}
-
+/* MAI */ /* no consigo quitar el margen se me genera en el hero */
 .nombredelequipo {
   display: flex;
   flex-direction: column;
@@ -77,12 +26,16 @@ body {
   height: 60px;
   width: 100%;
 }
-
 .nombre {
   font-size: 16px;
   color: white;
 }
-
+.header {
+  background-size: cover;
+  background-image: url(../images/altavoz-barato-1-2-3.webp);
+  width: 100%;
+  height: 421px;
+}
 .enlaces {
   display: flex;
   justify-content: space-around;
@@ -94,27 +47,74 @@ body {
   font-family: "Rubik", sans-serif;
   text-transform: uppercase;
   width: 100%;
+  line-height: var(--interlineadotexto);
+}
+.lema_titulo {
   height: 45px;
 }
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+  background-color: white;
+  padding: 14px 15px 16px;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  top: -30px;
+  width: 90%;
+  right: 3%;
+  left: 3%;
+}
+.equipo {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 30px 0px 15px 0px;
+  font-family: "rubik", sans-serif;
+  font-size: 24px;
+  line-height: var(--interlineadotexto);
+  color: aqua;
+}
+.equipo1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px, 15px, 90px;
+  font-family: "Rubik", sans-serif;
+  width: 100%;
+  line-height: var(--interlineadotexto);
+}
+.textoequipo {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 15px 90px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
 
+/* IRENE */
+/*al aplicar translate vuelve a rotar el cuadrado a la posición horizontal*/
+.rombo {
+  display: flex;
+  box-sizing: content-box;
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  transform: rotate(45deg);
+  position: relative;
+}
 .fortalezas {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: var(--alineado);
+  margin: 0px 0 0;
   padding: 30px 15px 45px;
   background-color: var(--coolgrey-light);
 }
-/*al aplicar translate vuelve a rotar el cuadrado a la posición horizontal*/
-.rombo {
-  display: flex;
-  background-color: white;
-  height: 1.875rem;
-  width: 1.875rem;
-  transform: rotate(45deg);
-  position: absolute;
-  transform: translateY(-100%);
-}
-
 .articulo {
   height: 50%;
 }
@@ -126,7 +126,6 @@ body {
   color: var(--colortitulo2);
   line-height: var(--interlineadotitulo);
 }
-
 .parrafo {
   font-size: 16px;
   color: var(--colortexto);
@@ -135,6 +134,8 @@ body {
   margin-right: 15px;
   font-family: "Open Sans", sans-serif;
 }
+
+/* PALOMA Y ANA */
 
 .quienessomos {
   display: flex;
@@ -150,7 +151,6 @@ body {
   text-align: center;
   margin: 15px;
 }
-
 .description {
   width: 100%;
   color: #54585a;
@@ -158,7 +158,6 @@ body {
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
 }
-
 .photo {
   max-width: 180px;
   max-height: 180px;
@@ -172,7 +171,6 @@ body {
   color: black;
   line-height: 45px;
 }
-
 .icons {
   align-items: center;
   color: #099d8d;
@@ -181,6 +179,8 @@ body {
   margin-bottom: 10px;
   line-height: 30px;
 }
+
+/* IRENE */
 
 .footer {
   display: flex;
@@ -217,143 +217,72 @@ body {
   text-align: center;
 }
 
-/*Tablet*/
+/*****************Tablet*****************/
 @media all and (min-width: 768px) {
+  /*MAI*/
+
+  .nombre {
+    position: relative;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  .enlaces {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -50px;
+    font-size: 15px;
+    background-color: transparent;
+    left: 239px;
+  }
+  .link {
+    padding: 16px 45px 14px 0px;
+  }
+  .hero {
+    position: relative;
+    top: -80px;
+    padding: 15px 30px 15px 30px;
+    width: 441px;
+    height: 80px;
+    opacity: 0.8;
+  }
+  .equipo {
+    padding-top: 45px;
+  }
+
+  /*IRENE*/
+
   .fortalezas {
     flex-direction: row;
   }
   .rombo {
+    position: absolute;
+    left: 50vw;
   }
-
-  .articulo {
-    height: 50%;
-  }
-  .title {
-    display: inline-block;
-    font-family: "Rubik", sans-serif;
-    font-size: 22px;
-    font-weight: 600;
-    color: var(--colortitulo2);
-    line-height: var(--interlineadotitulo);
-  }
-
-  .parrafo {
-    font-size: 16px;
-    color: var(--colortexto);
-    line-height: var(--interlineadotexto);
-    margin-left: 15px;
-    margin-right: 15px;
-    font-family: "Open Sans", sans-serif;
-  }
-
   .footer {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 250px;
-    width: 100%;
-    border: solid 1px var(--coolgrey);
-    background-color: white;
-    text-align: var(--alineado);
+    flex-direction: row;
+    justify-content: space-between;
   }
   .copy {
-    color: var(--coolgrey);
-    height: 20px;
-    font-family: openSans;
-    font-size: 14px;
-    line-height: 20px;
   }
   .navegadorfooter {
-    display: flex;
-    flex-direction: column;
-    margin: 20px 29px 30px;
-    font-size: 14px;
-    font-weight: 600;
-    font-family: "Open Sans", sans-serif;
-    color: var(--colortexto);
-    opacity: 0.75;
-    text-transform: uppercase;
-    line-height: 20px;
   }
   .logo {
-    width: 116px;
-    height: 45px;
-    text-align: center;
+    position: absolute;
+    left: 0em;
   }
 }
 
-/*Desktop*/
+/*****************Desktop*****************/
 @media all and (min-width: 1200px) {
-  .fortalezas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px 15px 45px;
-    background-color: var(--coolgrey-light);
-  }
-  .rombo {
-    display: flex;
-    background-color: white;
-    height: 1.875rem;
-    width: 1.875rem;
-    transform: rotate(45deg);
-    position: absolute;
-    transform: translateY(-100%);
-  }
-
-  .articulo {
-    height: 50%;
-  }
-  .title {
-    display: inline-block;
-    font-family: "Rubik", sans-serif;
-    font-size: 22px;
-    font-weight: 600;
-    color: var(--colortitulo2);
-    line-height: var(--interlineadotitulo);
-  }
-
-  .parrafo {
-    font-size: 16px;
-    color: var(--colortexto);
-    line-height: var(--interlineadotexto);
-    margin-left: 15px;
-    margin-right: 15px;
-    font-family: "Open Sans", sans-serif;
-  }
-
   .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 250px;
-    width: 100%;
-    border: solid 1px var(--coolgrey);
-    background-color: white;
-    text-align: var(--alineado);
   }
   .copy {
-    color: var(--coolgrey);
-    height: 20px;
-    font-family: openSans;
-    font-size: 14px;
-    line-height: 20px;
   }
   .navegadorfooter {
-    display: flex;
-    flex-direction: column;
-    margin: 20px 29px 30px;
-    font-size: 14px;
-    font-weight: 600;
-    font-family: "Open Sans", sans-serif;
-    color: var(--colortexto);
-    opacity: 0.75;
-    text-transform: uppercase;
-    line-height: 20px;
   }
   .logo {
-    width: 116px;
-    height: 45px;
-    text-align: center;
   }
 }
