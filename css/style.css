@@ -10,6 +10,7 @@
 }
 
 body {
+  box-sizing: border-box;
   text-align: var(--alineado);
 }
 /* MAI */ /* no consigo quitar el margen se me genera en el hero */
@@ -209,7 +210,6 @@ body {
   .nombre {
     position: relative;
     box-sizing: border-box;
-    position: relative;
     font-size: 16px;
   }
   .enlaces {
