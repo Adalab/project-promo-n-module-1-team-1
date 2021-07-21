@@ -8,12 +8,14 @@
   --coolgrey: #b8b8b9;
   --coolgrey-light: rgba(184, 184, 185, 0.2);
 }
+
 .header {
   background-image: url(../images/altavoz-barato-1-2-3.webp);
   background-position: center;
   width: 100%;
   height: 421px;
 }
+
 .equipo {
   display: flex;
   justify-content: center;
@@ -23,6 +25,7 @@
   line-height: var(--interlineadotexto);
   color: aqua;
 }
+
 .equipo1 {
   display: flex;
   flex-direction: column;
@@ -32,10 +35,12 @@
   width: 100%;
   line-height: var(--interlineadotexto);
 }
+
 body {
   max-width: 768px;
   text-align: var(--alineado);
 }
+
 .lema_titulo {
   display: flex;
   justify-content: center;
@@ -52,6 +57,7 @@ body {
   right: 4%;
   left: 3%;
 }
+
 .textoequipo {
   display: flex;
   flex-direction: column;
@@ -60,6 +66,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
 }
+
 .nombredelequipo {
   display: flex;
   flex-direction: column;
@@ -70,10 +77,12 @@ body {
   height: 60px;
   width: 100%;
 }
+
 .nombre {
   font-size: 16px;
   color: white;
 }
+
 .enlaces {
   display: flex;
   justify-content: space-around;
@@ -89,10 +98,21 @@ body {
 }
 
 .fortalezas {
-  text-align: var(--alineado);
-  margin: 0px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 30px 15px 45px;
   background-color: var(--coolgrey-light);
+}
+/*al aplicar translate vuelve a rotar el cuadrado a la posición horizontal*/
+.rombo {
+  display: flex;
+  background-color: white;
+  height: 1.875rem;
+  width: 1.875rem;
+  transform: rotate(45deg);
+  position: absolute;
+  transform: translateY(-100%);
 }
 
 .articulo {
