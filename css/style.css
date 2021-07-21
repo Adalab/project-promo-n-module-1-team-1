@@ -197,3 +197,44 @@ body {
   height: 45px;
   text-align: center;
 }
+
+@media screen and (min-width: 1200px) {
+  .quienessomos {
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .description1 {
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    color: #54585a;
+    line-height: var(--interlineadotexto);
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  .photo {
+    max-width: 180px;
+    max-height: 180px;
+    border-radius: 4px;
+    border: solid 5px rgba(0, 0, 0, 0.08);
+  }
+  .names {
+    align-items: flex-start;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    color: black;
+    line-height: 45px;
+  }
+
+  .icons {
+    align-items: flex-start;
+    color: #099d8d;
+    size: 16px;
+    padding: 30px;
+    margin-bottom: 10px;
+    line-height: 30px;
+  }
+}
