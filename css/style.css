@@ -8,12 +8,64 @@
   --coolgrey: #b8b8b9;
   --coolgrey-light: rgba(184, 184, 185, 0.2);
 }
+
+body {
+  text-align: var(--alineado);
+}
+/* MAI */ /* no consigo quitar el margen se me genera en el hero */
+.nombredelequipo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--colortitulo2-1);
+  font-family: "Rubik", sans-serif;
+  text-transform: uppercase;
+  height: 60px;
+  width: 100%;
+}
+.nombre {
+  font-size: 16px;
+  color: white;
+}
+
 .header {
   background-image: url(../images/altavoz-barato-1-2-3.webp);
   background-position: center;
   width: 100%;
   height: 421px;
 }
+
+.enlaces {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  background-color: rgba(0, 255, 255, 0.9);
+  font-family: "Rubik", sans-serif;
+  text-transform: uppercase;
+  width: 100%;
+  height: 45px;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+  background-color: white;
+  padding: 14px 15px 16px;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  top: -30px;
+  width: 90%;
+  right: 3%;
+  left: 3%;
+}
+
 .equipo {
   display: flex;
   justify-content: center;
@@ -32,25 +84,7 @@
   width: 100%;
   line-height: var(--interlineadotexto);
 }
-body {
-  text-align: var(--alineado);
-}
-.lema_titulo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  box-sizing: border-box;
-  background-color: white;
-  padding: 14px 15px 16px;
-  font-size: 18px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-  top: -30px;
-  width: 90%;
-  right: 3%;
-  left: 3%;
-}
+
 .textoequipo {
   display: flex;
   flex-direction: column;
@@ -59,33 +93,8 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
 }
-.nombredelequipo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: var(--colortitulo2-1);
-  font-family: "Rubik", sans-serif;
-  text-transform: uppercase;
-  height: 60px;
-  width: 100%;
-}
-.nombre {
-  font-size: 16px;
-  color: white;
-}
-.enlaces {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  text-decoration: none;
-  font-size: 16px;
-  color: white;
-  background-color: rgba(0, 255, 255, 0.9);
-  font-family: "Rubik", sans-serif;
-  text-transform: uppercase;
-  width: 100%;
-  height: 45px;
-}
+
+/* IRENE */
 
 .fortalezas {
   text-align: var(--alineado);
@@ -114,7 +123,7 @@ body {
   margin-right: 15px;
   font-family: "Open Sans", sans-serif;
 }
-
+/* PALOMA Y ANA */
 .quienessomos {
   display: flex;
   flex-wrap: wrap;
@@ -160,7 +169,7 @@ body {
   margin-bottom: 10px;
   line-height: 30px;
 }
-
+/* IRENE */
 .footer {
   display: flex;
   flex-direction: column;
