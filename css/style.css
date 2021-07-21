@@ -206,6 +206,24 @@ body {
 }
 
 @media all and (min-width: 768px) {
+  .nombre {
+    position: relative;
+
+    color: pink;
+  }
+  .enlaces {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -50px;
+    font-size: 15px;
+    background-color: transparent;
+    left: 239px;
+  }
+  .link {
+    padding: 16px 45px 14px 0px;
+  }
   .hero {
     position: relative;
     top: -80px;
