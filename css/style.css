@@ -54,10 +54,8 @@ body {
 }
 .hero {
   display: flex;
-  justify-content: center;
-  align-items: center;
   position: relative;
-  box-sizing: border-box;
+
   background-color: white;
   padding: 14px 15px 16px;
   font-size: 18px;
@@ -65,7 +63,6 @@ body {
   font-weight: 600;
   top: -30px;
   width: 90%;
-  right: 3%;
   left: 3%;
 }
 .equipo {
@@ -78,11 +75,12 @@ body {
   line-height: var(--interlineadotexto);
   color: aqua;
 }
+
 .equipo1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 30px, 15px, 90px;
+  padding: 30px, 15px, 90px; /* me quedo aqui */
   font-family: "Rubik", sans-serif;
   width: 100%;
   line-height: var(--interlineadotexto);
@@ -233,10 +231,10 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    top: -52px;
+    top: -58px;
     font-size: 15px;
     background-color: transparent;
-    left: 239px;
+    left: 190px;
   }
   .link {
     padding: 16px 45px 14px 0px;
