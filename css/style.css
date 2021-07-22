@@ -10,7 +10,7 @@
 }
 
 body {
-  max-width: 768px;
+  /*max-width: 768px;*/
   text-align: var(--alineado);
   box-sizing: border-box;
   text-align: var(--alineado);
@@ -98,13 +98,11 @@ body {
 /* IRENE */
 /*al aplicar translate vuelve a rotar el cuadrado a la posición horizontal*/
 .rombo {
-  display: flex;
-  box-sizing: content-box;
   background-color: white;
   height: 30px;
   width: 30px;
-  transform: rotate(45deg);
-  position: relative;
+  transform: rotate(45deg) translateY(50%);
+  margin: auto;
 }
 .fortalezas {
   display: flex;
@@ -243,7 +241,7 @@ body {
     position: relative;
     top: -80px;
     padding: 15px 30px 15px 30px;
-    width: 441px;
+    /*width: 441px;*/
     height: 80px;
     opacity: 0.8;
   }
@@ -257,8 +255,8 @@ body {
     flex-direction: row;
   }
   .rombo {
-    position: absolute;
-    left: 50vw;
+    /*position: absolute;
+    left: 50vw;*/
   }
   .footer {
     display: flex;
