@@ -10,6 +10,8 @@
 }
 
 body {
+  max-width: 768px;
+  text-align: var(--alineado);
   box-sizing: border-box;
   text-align: var(--alineado);
 }
@@ -28,14 +30,12 @@ body {
   font-size: 16px;
   color: white;
 }
-
 .header {
   background-size: cover;
   background-image: url(../images/altavoz-barato-1-2-3.webp);
   width: 100%;
   height: 421px;
 }
-
 .enlaces {
   display: flex;
   justify-content: space-around;
@@ -47,9 +47,11 @@ body {
   font-family: "Rubik", sans-serif;
   text-transform: uppercase;
   width: 100%;
+  line-height: var(--interlineadotexto);
+}
+.lema_titulo {
   height: 45px;
 }
-
 .hero {
   display: flex;
   justify-content: center;
@@ -66,7 +68,6 @@ body {
   right: 3%;
   left: 3%;
 }
-
 .equipo {
   display: flex;
   justify-content: center;
@@ -86,7 +87,6 @@ body {
   width: 100%;
   line-height: var(--interlineadotexto);
 }
-
 .textoequipo {
   display: flex;
   flex-direction: column;
@@ -96,14 +96,25 @@ body {
 }
 
 /* IRENE */
-
+/*al aplicar translate vuelve a rotar el cuadrado a la posición horizontal*/
+.rombo {
+  display: flex;
+  box-sizing: content-box;
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  transform: rotate(45deg);
+  position: relative;
+}
 .fortalezas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: var(--alineado);
   margin: 0px 0 0;
   padding: 30px 15px 45px;
   background-color: var(--coolgrey-light);
 }
-
 .articulo {
   height: 50%;
 }
@@ -115,7 +126,6 @@ body {
   color: var(--colortitulo2);
   line-height: var(--interlineadotitulo);
 }
-
 .parrafo {
   font-size: 16px;
   color: var(--colortexto);
@@ -124,7 +134,9 @@ body {
   margin-right: 15px;
   font-family: "Open Sans", sans-serif;
 }
+
 /* PALOMA Y ANA */
+
 .quienessomos {
   display: flex;
   flex-wrap: wrap;
@@ -139,7 +151,6 @@ body {
   text-align: center;
   margin: 15px;
 }
-
 .description {
   width: 100%;
   color: #54585a;
@@ -147,7 +158,6 @@ body {
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
 }
-
 .photo {
   max-width: 180px;
   max-height: 180px;
@@ -161,7 +171,6 @@ body {
   color: black;
   line-height: 45px;
 }
-
 .icons {
   align-items: center;
   color: #099d8d;
@@ -170,7 +179,9 @@ body {
   margin-bottom: 10px;
   line-height: 30px;
 }
+
 /* IRENE */
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -206,18 +217,25 @@ body {
   text-align: center;
 }
 
+/*****************Tablet*****************/
 @media all and (min-width: 768px) {
+  /*MAI*/
+
   .nombre {
-    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     box-sizing: border-box;
     font-size: 16px;
+    padding: 15px 0px 15px 45px;
   }
   .enlaces {
     box-sizing: border-box;
     display: flex;
     justify-content: center;
+    align-items: center;
     position: relative;
-    top: -50px;
+    top: -52px;
     font-size: 15px;
     background-color: transparent;
     left: 239px;
@@ -277,5 +295,41 @@ body {
     padding: 30px;
     margin-bottom: 10px;
     line-height: 30px;
+  }
+  .textoequipo {
+  } /* padding: 10px 45px 30px; /* modificar */
+
+  /*IRENE*/
+
+  .fortalezas {
+    flex-direction: row;
+  }
+  .rombo {
+    position: absolute;
+    left: 50vw;
+  }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .copy {
+  }
+  .navegadorfooter {
+  }
+  .logo {
+    position: absolute;
+    left: 0em;
+  }
+}
+/*****************Desktop*****************/
+@media all and (min-width: 1200px) {
+  .footer {
+  }
+  .copy {
+  }
+  .navegadorfooter {
+  }
+  .logo {
   }
 }
