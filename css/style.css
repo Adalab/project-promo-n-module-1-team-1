@@ -148,11 +148,22 @@ body {
   margin: 15px;
 }
 .description {
+  display: flex;
   width: 100%;
   color: #54585a;
   line-height: var(--interlineadotexto);
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
+}
+.description.left .box {
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 31px;
+  text-align: left;
+}
+.description.right {
+  flex-direction: row-reverse;
+  text-align: right;
 }
 .photo {
   width: 180px;
@@ -166,6 +177,7 @@ body {
   font-size: 20px;
   color: black;
   line-height: 45px;
+  text-align: left;
 }
 .icons {
   align-items: center;
@@ -264,6 +276,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
   }
 
   .photo {
@@ -282,13 +295,13 @@ body {
   .text {
     width: 80vh;
     font-size: 16px;
-    text-align: right;
+    text-align: left;
   }
 
   .icons {
     color: #099d8d;
     size: 16px;
-    padding: 30px;
+    padding: 15px 0 0 0;
     margin-bottom: 10px;
     line-height: 30px;
   }
