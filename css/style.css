@@ -8,59 +8,12 @@
   --coolgrey: #b8b8b9;
   --coolgrey-light: rgba(184, 184, 185, 0.2);
 }
-.header {
-  background-image: url(../images/altavoz-barato-1-2-3.webp);
-  background-position: center;
-  width: 100%;
-  height: 421px;
-}
-.equipo {
-  display: flex;
-  justify-content: center;
-  padding: 0px 86.5px 15px;
-  font-family: "rubik", sans-serif;
-  font-size: 24px;
-  line-height: var(--interlineadotexto);
-  color: aqua;
-}
-.equipo1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 30px, 15px, 90px;
-  font-family: "Rubik", sans-serif;
-  height: 384px;
-  width: 100%;
-  line-height: var(--interlineadotexto);
-}
+
 body {
-  max-width: 768px;
+  box-sizing: border-box;
   text-align: var(--alineado);
 }
-.lema_titulo {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  position: relative;
-  background-color: white;
-  padding: 14px 15px 16px;
-  font-size: 18px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-  top: -40px;
-  width: 85%;
-  height: 50px;
-  right: 4%;
-  left: 3%;
-}
-.textoequipo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 30px 15px 90px;
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-}
+/* MAI */ /* no consigo quitar el margen se me genera en el hero */
 .nombredelequipo {
   display: flex;
   flex-direction: column;
@@ -75,6 +28,14 @@ body {
   font-size: 16px;
   color: white;
 }
+
+.header {
+  background-size: cover;
+  background-image: url(../images/altavoz-barato-1-2-3.webp);
+  width: 100%;
+  height: 421px;
+}
+
 .enlaces {
   display: flex;
   justify-content: space-around;
@@ -88,6 +49,53 @@ body {
   width: 100%;
   height: 45px;
 }
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+  background-color: white;
+  padding: 14px 15px 16px;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  top: -30px;
+  width: 90%;
+  right: 3%;
+  left: 3%;
+}
+
+.equipo {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 30px 0px 15px 0px;
+  font-family: "rubik", sans-serif;
+  font-size: 24px;
+  line-height: var(--interlineadotexto);
+  color: aqua;
+}
+.equipo1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px, 15px, 90px;
+  font-family: "Rubik", sans-serif;
+  width: 100%;
+  line-height: var(--interlineadotexto);
+}
+
+.textoequipo {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 15px 90px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+/* IRENE */
 
 .fortalezas {
   text-align: var(--alineado);
@@ -116,7 +124,7 @@ body {
   margin-right: 15px;
   font-family: "Open Sans", sans-serif;
 }
-
+/* PALOMA Y ANA */
 .quienessomos {
   display: flex;
   flex-wrap: wrap;
@@ -141,8 +149,8 @@ body {
 }
 
 .photo {
-  max-width: 180px;
-  max-height: 180px;
+  width: 180px;
+  height: 180px;
   border-radius: 4px;
   border: solid 5px rgba(0, 0, 0, 0.08);
 }
@@ -162,7 +170,7 @@ body {
   margin-bottom: 10px;
   line-height: 30px;
 }
-
+/* IRENE */
 .footer {
   display: flex;
   flex-direction: column;
@@ -198,43 +206,66 @@ body {
   text-align: center;
 }
 
+@media all and (min-width: 768px) {
+  .nombre {
+    position: relative;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  .enlaces {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -50px;
+    font-size: 15px;
+    background-color: transparent;
+    left: 239px;
+  }
+  .link {
+    padding: 16px 45px 14px 0px;
+  }
+  .hero {
+    position: relative;
+    top: -80px;
+    padding: 15px 30px 15px 30px;
+    width: 441px;
+    height: 80px;
+    opacity: 0.8;
+  }
+  .equipo {
+    padding-top: 45px;
+  }
+}
+
+/* VISTA DESDE DESKTOP */
+
 @media screen and (min-width: 1200px) {
   .quienessomos {
-    box-sizing: border-box;
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    color: #54585a;
   }
 
-  .description1 {
+  .description {
+    display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    width: 100%;
-    color: #54585a;
-    line-height: var(--interlineadotexto);
-    font-size: 16px;
-    font-family: "Open Sans", sans-serif;
+    justify-content: flex-start;
+  }
+  .box {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
 
   .photo {
-    max-width: 180px;
-    max-height: 180px;
-    border-radius: 4px;
-    border: solid 5px rgba(0, 0, 0, 0.08);
-  }
-  .names {
-    align-items: flex-start;
-    font-family: "Open Sans", sans-serif;
-    font-size: 20px;
-    color: black;
-    line-height: 45px;
-  }
-
-  .icons {
-    align-items: flex-start;
-    color: #099d8d;
-    size: 16px;
-    padding: 30px;
-    margin-bottom: 10px;
-    line-height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 30px;
   }
 }
+
+/* FIN DE VISTA DESDE DESKTOP */
