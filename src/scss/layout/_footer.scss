@@ -12,16 +12,18 @@
     flex-direction: row;
     justify-content: space-between;
   }
+
+  &__copy {
+    @include textcopy;
+  }
+  &__navigation {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 29px 30px;
+    @include textfooternavigation;
+  }
 }
-.footer__copy {
-  @include textcopy;
-}
-.footer__navigation {
-  display: flex;
-  flex-direction: column;
-  margin: 20px 29px 30px;
-  @include textfooternavigation;
-}
+
 .logo {
   width: 116px;
   height: 45px;
