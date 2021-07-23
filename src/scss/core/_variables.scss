@@ -4,7 +4,40 @@
   --colortitulo2-1: rgba(9, 157, 141, 0.95);
   --interlineadotitulo: 30px;
   --colortexto: #54585a;
-  --interlineadotexto: 24px;
   --coolgrey: #b8b8b9;
   --coolgrey-light: rgba(184, 184, 185, 0.2);
+}
+/************main************/
+@mixin greentitle {
+  display: inline-block;
+  font-family: "Rubik", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--colortitulo2);
+  line-height: var(--interlineadotitulo);
+}
+
+@mixin text {
+  font-size: 16px;
+  color: var(--colortexto);
+  line-height: 24px;
+  font-family: "Open Sans", sans-serif;
+}
+
+/********footer********/
+@mixin textfooternavigation {
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  color: var(--colortexto);
+  opacity: 0.75;
+  text-transform: uppercase;
+  line-height: 20px;
+}
+@mixin textcopy {
+  color: var(--coolgrey);
+  height: 20px;
+  font-family: openSans;
+  font-size: 14px;
+  line-height: 20px;
 }
