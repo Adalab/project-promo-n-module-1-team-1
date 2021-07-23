@@ -105,15 +105,21 @@
     position: relative;
     top: -80px;
     padding: 15px 30px 15px 30px;
-    /*width: 441px;*/
+    width: 441px;
     height: 80px;
     opacity: 0.8;
+  }
+  .containerequipo {
+    text-align: center;
   }
   .equipo {
     padding-top: 45px;
   }
 }
 @media screen and (min-width: 1200px) {
+  .hero {
+    left: 200px;
+  }
   .containerequipo {
     width: 80vh;
     text-align: center;
