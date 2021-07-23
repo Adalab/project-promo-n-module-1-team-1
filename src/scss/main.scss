@@ -192,23 +192,20 @@ body {
   margin: 15px;
 }
 .description {
+  width: 100%;
+  font-size: 16px;
+  line-height: var(--interlineadotexto);
+  font-family: "open sans", sans-serif;
+  color: #54585a;
+}
+/*.description {
   display: flex;
   width: 100%;
   color: #54585a;
   line-height: var(--interlineadotexto);
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
-}
-.description.left .box {
-  flex-direction: column;
-  align-items: flex-start;
-  margin-left: 31px;
-  text-align: left;
-}
-.description.right {
-  flex-direction: row-reverse;
-  text-align: right;
-}
+}*/
 .photo {
   width: 180px;
   height: 180px;
@@ -320,7 +317,16 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
   }
-
+  .description.left .box {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 31px;
+    text-align: left;
+  }
+  .description.right {
+    flex-direction: row-reverse;
+    text-align: right;
+  }
   .photo {
     max-width: 180px;
     max-height: 180px;
@@ -375,6 +381,17 @@ body {
 }
 /*****************Desktop*****************/
 @media all and (min-width: 1200px) {
+  .containerequipo {
+    width: 80vh;
+    text-align: center;
+  }
+  .equipo {
+    padding-top: 0;
+  }
+  .equipo1 {
+    flex-direction: row;
+  }
+
   .footer {
   }
   .copy {
