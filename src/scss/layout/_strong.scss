@@ -1,0 +1,46 @@
+.rombo {
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  transform: rotate(45deg) translateY(50%);
+  margin: auto;
+}
+.fortalezas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: var(--alineado);
+  margin: 0px 0 0;
+  padding: 30px 15px 45px;
+  background-color: var(--coolgrey-light);
+}
+.articulo {
+  height: 50%;
+}
+.title {
+  display: inline-block;
+  font-family: "Rubik", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--colortitulo2);
+  line-height: var(--interlineadotitulo);
+}
+.parrafo {
+  font-size: 16px;
+  color: var(--colortexto);
+  line-height: var(--interlineadotexto);
+  margin-left: 15px;
+  margin-right: 15px;
+  font-family: "Open Sans", sans-serif;
+}
+
+/*****************Tablet*****************/
+@media all and (min-width: 768px) {
+  .fortalezas {
+    flex-direction: row;
+  }
+  .rombo {
+    /*position: absolute;
+          left: 50vw;*/
+  }
+}
