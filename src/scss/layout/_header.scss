@@ -50,14 +50,14 @@
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   top: -30px;
-  width: 90%;
+  width: 80%;
   height: 50px;
 }
 .equipo {
   display: flex;
   justify-content: center;
   box-sizing: border-box;
-  padding: 30px 0px 15px 0px;
+
   font-family: "rubik", sans-serif;
   font-size: 24px;
   line-height: var(--interlineadotexto);
@@ -76,7 +76,7 @@
 .textoequipo {
   display: flex;
   flex-direction: column;
-  padding: 30px 15px 90px;
+  padding: 30px 15px 20px;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
 }
@@ -108,13 +108,11 @@
   .hero {
     position: relative;
     top: -80px;
+    left: -100px;
     padding: 15px 30px 15px 30px;
     width: 441px;
     height: 80px;
     opacity: 0.8;
-  }
-
-  .cuerpo {
   }
   .containerequipo {
     text-align: center;
