@@ -36,10 +36,14 @@
 .lema_titulo {
   height: 45px;
 }
+.container_hero {
+  display: flex;
+  justify-content: center;
+}
 .hero {
   display: flex;
+  align-items: center;
   position: relative;
-
   background-color: white;
   padding: 14px 15px 16px;
   font-size: 18px;
@@ -47,7 +51,7 @@
   font-weight: 600;
   top: -30px;
   width: 90%;
-  left: 3%;
+  height: 50px;
 }
 .equipo {
   display: flex;
