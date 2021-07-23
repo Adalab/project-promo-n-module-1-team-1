@@ -109,11 +109,22 @@
     height: 80px;
     opacity: 0.8;
   }
+
+  .cuerpo {
+  }
   .containerequipo {
     text-align: center;
   }
   .equipo {
-    padding-top: 45px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .textoequipo {
+    width: 80vh;
+    padding-bottom: 20px;
+  }
+  .equipo1 {
+    flex-direction: row;
   }
 }
 @media screen and (min-width: 1200px) {
