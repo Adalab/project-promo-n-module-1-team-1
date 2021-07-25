@@ -46,33 +46,32 @@
 /*****************Tablet*****************/
 @media all and (min-width: 768px) {
   /* ANA */
-
-  .description {
-    width: 100%;
-    color: #54585a;
-    line-height: var(--interlineadotexto);
-    font-size: 16px;
-    font-family: "Open Sans", sans-serif;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  .whoarewe {
+    color: var(--colortitulo2);
+    text-transform: uppercase;
+    padding: 45px 0 41px 0;
   }
-
   .photo {
     max-width: 180px;
     max-height: 180px;
     border-radius: 4px;
     border: solid 5px rgba(0, 0, 0, 0.08);
   }
-  .description.left .box {
-    flex-direction: column;
+  .descriptionleft {
+    display: flex;
+    flex-direction: row;
     align-items: flex-start;
     margin-left: 31px;
     text-align: left;
   }
-  .description.right {
+  .descriptionright {
+    display: flex;
     flex-direction: row-reverse;
-    text-align: right;
+  }
+  .boxright {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
   }
 
   .names {
@@ -80,21 +79,37 @@
     font-size: 20px;
     color: black;
     line-height: 45px;
+    text-align: left;
   }
 
-  .text {
-    width: 80vh;
+  .textleft {
+    width: 443px;
+    height: 142px;
+    font-size: 16px;
+    text-align: left;
+  }
+  .textright {
+    width: 650px;
+    height: 142px;
     font-size: 16px;
     text-align: right;
   }
 
-  .icons {
+  .iconsleft {
     color: #099d8d;
     size: 16px;
-    padding: 30px;
-    margin-bottom: 10px;
-    line-height: 30px;
+    display: flex;
+    justify-content: left;
+    padding-left: 0;
   }
+  .iconsright {
+    color: #099d8d;
+    size: 16px;
+    display: flex;
+    justify-content: right;
+    padding-right: 0;
+  }
+
   .textoequipo {
   } /* padding: 10px 45px 30px; /* modificar */
 }
