@@ -1,4 +1,4 @@
-/* MAI */ /* no consigo quitar el margen se me genera en el hero */
+/* MAI */
 .nombredelequipo {
   display: flex;
   flex-direction: column;
@@ -79,6 +79,7 @@
   padding: 30px 15px 20px;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
+  line-height: var(--interlineadotexto);
 }
 
 /*****************Tablet*****************/
