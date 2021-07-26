@@ -37,6 +37,7 @@
 .container_hero {
   display: flex;
   justify-content: center;
+  height: 50px;
 }
 .hero {
   display: flex;
@@ -89,10 +90,10 @@
     align-items: center;
     box-sizing: border-box;
     font-size: 16px;
-    padding: 15px 0px 15px 45px;
+    padding: 15px 45px 15px 45px;
   }
   .enlaces {
-    justify-content: center;
+    justify-content: end;
 
     position: relative;
     top: -54px;
@@ -116,16 +117,17 @@
     text-align: center;
   }
   .equipo {
+    color: var(--colortitulo2);
     padding-top: 0;
     padding-bottom: 0;
   }
-  .textoequipo {
-    padding: 20px 45px 20px;
-  }
+
   .equipo1 {
     flex-direction: row;
   }
-
+  .textoequipo {
+    padding: 30px 45px 40px;
+  }
   @media screen and (min-width: 1200px) {
     .nombre {
       padding-left: 150px;
