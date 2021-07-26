@@ -111,7 +111,8 @@
     position: relative;
     top: -80px;
     left: -100px;
-    padding: 15px 30px 15px 30px;
+    position: relative;
+    padding: 0px 30px 0px 30px;
     width: 441px;
     height: 80px;
     opacity: 0.8;
@@ -131,7 +132,19 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  .nombre {
+    padding-left: 150px;
+  }
+  .enlaces {
+    width: 450px;
+    justify-content: center;
+    position: relative;
+    left: 700px;
+  }
   .hero {
+    position: relative;
+    padding: 0px 30px 0px 30px;
+    left: -220px;
   }
   .containerequipo {
     text-align: center;
@@ -140,7 +153,8 @@
     padding-top: 0;
   }
   .textoequipo {
-    width: 80vh;
+    padding: 20px 0px 60px;
+    margin: 0 300px 0 300px;
   }
   .equipo1 {
     flex-direction: row;
