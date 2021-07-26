@@ -37,7 +37,7 @@
 .container_hero {
   display: flex;
   justify-content: center;
-  height: 50px;
+  height: 60px;
 }
 .hero {
   display: flex;
@@ -104,10 +104,8 @@
     padding: 16px 45px 14px 0px;
   }
   .hero {
-    position: relative;
     top: -80px;
     left: -100px;
-    position: relative;
     padding: 0px 30px 0px 30px;
     width: 441px;
     height: 80px;
@@ -128,33 +126,26 @@
   .textoequipo {
     padding: 30px 45px 40px;
   }
-  @media screen and (min-width: 1200px) {
-    .nombre {
-      padding-left: 150px;
-    }
-    .enlaces {
-      width: 450px;
-      justify-content: center;
-      position: relative;
-      left: 700px;
-    }
-    .hero {
-      position: relative;
-      padding: 0px 30px 0px 30px;
-      left: -220px;
-    }
-    .containerequipo {
-      text-align: center;
-    }
-    .equipo {
-      padding-top: 0;
-    }
-    .textoequipo {
-      padding: 20px 0px 60px;
-      margin: 0 300px 0 300px;
-    }
-    .equipo1 {
-      flex-direction: row;
-    }
+}
+@media all and (min-width: 1200px) {
+  .nombre {
+    padding-left: 150px;
+  }
+
+  .hero {
+    left: -230px;
+  }
+  .containerequipo {
+    text-align: center;
+  }
+  .equipo {
+    padding-top: 0;
+  }
+  .textoequipo {
+    padding: 20px 0px 60px;
+    margin: 0 300px 0 300px;
+  }
+  .equipo1 {
+    flex-direction: row;
   }
 }
