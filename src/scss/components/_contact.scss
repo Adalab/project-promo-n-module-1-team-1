@@ -7,14 +7,20 @@
 }
 .campos {
   color: #54585a;
-  margin-bottom: 60px;
+  margin: 30px 0 60px 0;
 }
 
 body {
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
 }
-
+.textequip {
+  margin: 20px 0px 20px 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: var(--colortexto);
+  line-height: 24px;
+}
 .main {
   margin: 20px;
 }
@@ -52,5 +58,12 @@ body {
 @media all and (min-width: 768px) {
   .main {
     margin: 0 160px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .textequip {
+    padding: 15px 0 30px 0;
+    @include text;
   }
 }
