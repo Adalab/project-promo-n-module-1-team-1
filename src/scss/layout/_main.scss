@@ -38,6 +38,9 @@
   line-height: var(--interlineadotexto);
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 60px;
+  }
 
   @media all and (min-width: 1200px) {
     .descriptionleft {
@@ -62,20 +65,29 @@
 
 .text {
   @media all and (min-width: 1200px) {
-    padding: 15px;
+    width: 439px;
+    height: 138px;
   }
 }
 
+.boxright {
+  @media all and (min-width: 1200px) {
+    margin-right: 138px;
+    margin-left: px;
+  }
+}
+
+.boxleft {
+  @media all and (min-width: 1200px) {
+    margin-right: 300px;
+    margin-left: 138px;
+  }
+}
 .photo {
   width: 180px;
   height: 180px;
   border-radius: 4px;
   border: solid 5px rgba(0, 0, 0, 0.08);
-
-  @media all and (min-width: 1200px) {
-    width: 278px;
-    height: 278px;
-  }
 }
 .names {
   text-align: center;
@@ -83,10 +95,6 @@
   font-size: 20px;
   color: black;
   line-height: 45px;
-
-  @media all and (min-width: 1200px) {
-    padding: 15px;
-  }
 }
 .icons {
   align-items: center;
@@ -95,17 +103,17 @@
   padding: 30px;
   margin-bottom: 10px;
   line-height: 30px;
-
-  @media all and (min-width: 1200px) {
-    padding-top: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+}
+.fab {
+  padding: 5px;
 }
 
 /*****************Tablet*****************/
 @media all and (min-width: 768px) {
   /* ANA */
+  .quienessomos {
+    margin: 0 45px 0 45px;
+  }
 
   .photo {
     width: 205px;
@@ -128,6 +136,12 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    margin-left: 30px;
+    margin-right: 22px;
+  }
+  .boxleft {
+    margin-right: 30px;
+    margin-left: 22px;
   }
 
   .names {
@@ -139,14 +153,11 @@
   }
 
   .textleft {
-    width: 443px;
-    height: 142px;
+    margin-right: 44px;
     font-size: 16px;
     text-align: left;
   }
   .textright {
-    width: 443px;
-    height: 142px;
     font-size: 16px;
     text-align: right;
   }
@@ -165,7 +176,13 @@
     justify-content: right;
     padding-right: 0;
   }
+}
 
-  .textoequipo {
-  } /* padding: 10px 45px 30px; /* modificar */
+/*photo vista DESKTOP*/
+
+@media all and (min-width: 1200px) {
+  .photo {
+    width: 278px;
+    height: 278px;
+  }
 }
