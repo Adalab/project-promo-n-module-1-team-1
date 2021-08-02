@@ -23,7 +23,7 @@
   </head>
 
   <body>
-    <header>
+    <header class="header2">
       <section class="nombredelequipo">
         <h1 class="nombre">Cabra</h1>
       </section>
@@ -37,7 +37,7 @@
     </header>
     <main class="main">
       <section class="equipo1">
-        <article class="container.equipo">
+        <article class="containerequipo">
           <h1 id="equipo" class="equipo">Contacto</h1>
           <p class="textequip">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat
@@ -46,13 +46,14 @@
             pariatur explicabo! Quisquam, dolor cupiditate?
           </p>
           <p class="campos">
-            <small>Todos los campos con * son obligatorios.</small>
+            Todos los campos con <span class="asterisk">*</span> son obligatorios.
           </p>
         </article>
-      </section>
+      </section >
+      <section class="section2">
       <form action="https://formspree.io/f/xoqykqvv" method="post">
-        <div>
-          <label class="label" for="Name">Nombre completo *</label>
+        
+          <label class="label" for="Name">Nombre completo <span class="asterisk">*</span> </label>
           <input
             class="form"
             placeholder="Escribe tu nombre..."
@@ -60,31 +61,25 @@
             id="Name"
             name="Name"
           />
-        </div>
-        <div>
-          <label class="label" for="emailAddress">E-mail *
+          <label class="label" for="emailAddress">E-mail <span class="asterisk">*</span> 
           <input
-            class="form"
+            class="form" 
             placeholder="Escribe tu E-mail..."
             type="email"
             id="emailAddress"
             name="emailAddress"
           /></label>
-        </div>
-        <div>
           <label class="label" for="phone">Teléfono 
           <input
-            class="form"
+            class="form" 
             placeholder="Ej:123456789"
             type="tel"
             id="phone"
             name="phone"
           /></label>
-        </div>
-        <div>
-          <label class="label" for="comments">Mensaje *</label>
+          <label class="label " for="comments">Mensaje <span class="asterisk">*</span> </label>
           <input
-            class="form_comment"
+            class="form_comment" 
             placeholder="¿Que necesitas?"
             type="text"
             id="comments"
@@ -93,9 +88,8 @@
             maxlength="100"
             
           ></input>
-        </div>
         <input class="input" type="submit" value="Enviar" />
-      </form>
+      </form></section>
     </main>
     <footer class="footer">
       <h4 class="footer__copy">Equipo Cabra &copy;2021</h4>
