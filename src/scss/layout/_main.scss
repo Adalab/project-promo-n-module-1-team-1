@@ -1,9 +1,7 @@
 .quienessomos {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   font-family: "Rubik", sans-serif;
   font-size: 24px;
   font-weight: 600;
@@ -48,18 +46,12 @@
   @media all and (min-width: 1200px) {
     .descriptionleft {
       padding: 20px;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
     }
   }
 
   @media all and (min-width: 1200px) {
     .descriptionright {
       padding: 20px;
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: flex-end;
     }
   }
 }
@@ -68,6 +60,7 @@
   @media all and (min-width: 1200px) {
     margin-right: 138px;
     margin-left: 300px;
+    width: 1000px;
   }
 }
 
@@ -75,6 +68,7 @@
   @media all and (min-width: 1200px) {
     margin-right: 300px;
     margin-left: 138px;
+    width: 1000px;
   }
 }
 .photo {
@@ -106,7 +100,8 @@
   line-height: 30px;
 }
 .fab {
-  padding: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 /*****************Tablet*****************/
@@ -118,19 +113,15 @@
   }
 
   .photo {
-    max-width: 205px;
-    max-height: 205px;
-    border-radius: 4px;
-    border: solid 5px rgba(0, 0, 0, 0.08);
+    width: 205px;
+    height: 205px;
   }
   .descriptionleft {
-    display: flex;
     flex-direction: row;
     align-items: flex-start;
     text-align: left;
   }
   .descriptionright {
-    display: flex;
     flex-direction: row-reverse;
   }
   .boxright {
@@ -146,9 +137,7 @@
   }
 
   .names {
-    font-family: "Open Sans", sans-serif;
     font-size: 20px;
-    color: black;
     line-height: 45px;
     text-align: left;
   }
@@ -164,25 +153,19 @@
   }
 
   .iconsleft {
-    color: #099d8d;
-    size: 16px;
-    display: flex;
     justify-content: left;
-    padding-left: 0;
+    margin-left: -35px;
   }
   .iconsright {
-    color: #099d8d;
-    size: 16px;
-    display: flex;
     justify-content: right;
-    padding-right: 0;
+    margin-right: -26px;
   }
 }
 
 /*vista photo DESKTOP*/
 .photo {
   @media all and (min-width: 1200px) {
-    max-width: 278px;
-    max-height: 278px;
+    width: 278px;
+    height: 278px;
   }
 }
