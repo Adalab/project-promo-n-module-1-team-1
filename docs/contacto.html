@@ -23,7 +23,7 @@
   </head>
 
   <body>
-    <header>
+    <header class="header2">
       <section class="nombredelequipo">
         <h1 class="nombre">Cabra</h1>
       </section>
@@ -37,65 +37,66 @@
     </header>
     <main class="main">
       <section class="equipo1">
-        <article class="container.equipo">
+        <article class="containerequipo">
           <h1 id="equipo" class="equipo">Contacto</h1>
           <p class="textequip">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat
-            tempora dolores quaerat exercitationem amet quos aliquid eveniet
-            voluptates ex, natus similique recusandae ipsa voluptatem non
-            pariatur explicabo! Quisquam, dolor cupiditate?
+            Para consultas puedes completar el siguiente formulario y nos
+            pondremos en contacto contigo. Gracias.
           </p>
           <p class="campos">
-            <small>Todos los campos con * son obligatorios.</small>
+            Todos los campos con <span class="asterisk">*</span> son
+            obligatorios.
           </p>
         </article>
       </section>
-      <form action="https://formspree.io/f/xoqykqvv" method="post">
-        <div>
-          <label class="label" for="Name">Nombre completo *</label>
-          <input
-            class="form"
-            placeholder="Escribe tu nombre..."
-            type="text"
-            id="Name"
-            name="Name"
-          />
-        </div>
-        <div>
-          <label class="label" for="emailAddress">E-mail *
-          <input
-            class="form"
-            placeholder="Escribe tu E-mail..."
-            type="email"
-            id="emailAddress"
-            name="emailAddress"
+      <section>
+        <form
+          class="section2"
+          action="https://formspree.io/f/xoqykqvv"
+          method="post"
+        >
+          <label class="label" for="Name"
+            >Nombre completo <span class="asterisk">*</span>
+            <input
+              class="form"
+              placeholder="Escribe tu nombre..."
+              type="text"
+              id="Name"
+              name="Name"
+            />
+          </label>
+          <label class="label label2" for="emailAddress"
+            >E-mail <span class="asterisk">*</span>
+            <input
+              class="form"
+              placeholder="Escribe tu E-mail..."
+              type="email"
+              id="emailAddress"
+              name="emailAddress"
           /></label>
-        </div>
-        <div>
-          <label class="label" for="phone">Teléfono 
-          <input
-            class="form"
-            placeholder="Ej:123456789"
-            type="tel"
-            id="phone"
-            name="phone"
+          <label class="label label3" for="phone"
+            >Teléfono
+            <input
+              class="form"
+              placeholder="Ej:123456789"
+              type="tel"
+              id="phone"
+              name="phone"
           /></label>
-        </div>
-        <div>
-          <label class="label" for="comments">Mensaje *</label>
-          <input
-            class="form_comment"
-            placeholder="¿Que necesitas?"
-            type="text"
-            id="comments"
-            name="comments"
-            size="15"
-            maxlength="100"
-            
-          ></input>
-        </div>
-        <input class="input" type="submit" value="Enviar" />
-      </form>
+          <label class="label" for="comments"
+            >Mensaje <span class="asterisk">*</span>
+            <input
+              class="form_comment"
+              placeholder="¿Que necesitas?"
+              type="text"
+              id="comments"
+              name="comments"
+              size="15"
+              maxlength="100"
+          /></label>
+          <input class="input" type="submit" value="Enviar" />
+        </form>
+      </section>
     </main>
     <footer class="footer">
       <h4 class="footer__copy">Equipo Cabra &copy;2021</h4>
