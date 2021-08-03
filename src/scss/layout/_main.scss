@@ -90,6 +90,9 @@
   font-size: 20px;
   color: black;
   line-height: 45px;
+  @media all and (min-width: 1200px) {
+    margin-top: 40px;
+  }
 }
 .icons {
   align-items: center;
@@ -123,6 +126,7 @@
   }
   .descriptionright {
     flex-direction: row-reverse;
+    margin-right: 50px;
   }
   .boxright {
     display: flex;
