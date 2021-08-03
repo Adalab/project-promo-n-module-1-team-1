@@ -98,7 +98,8 @@
   line-height: 30px;
 }
 .fab {
-  padding: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 /*****************Tablet*****************/
@@ -110,8 +111,8 @@
   }
 
   .photo {
-    max-width: 205px;
-    max-height: 205px;
+    width: 205px;
+    height: 205px;
   }
   .descriptionleft {
     flex-direction: row;
@@ -151,16 +152,18 @@
 
   .iconsleft {
     justify-content: left;
+    margin-left: -35px;
   }
   .iconsright {
     justify-content: right;
+    margin-right: -26px;
   }
 }
 
 /*vista photo DESKTOP*/
 .photo {
   @media all and (min-width: 1200px) {
-    max-width: 278px;
-    max-height: 278px;
+    width: 278px;
+    height: 278px;
   }
 }
