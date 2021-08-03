@@ -3,7 +3,11 @@
   height: 30px;
   width: 30px;
   transform: rotate(45deg) translateY(50%);
-  margin: auto;
+  margin-left: 49vw;
+
+  @media all and (min-width: 768px) {
+    margin: auto;
+  }
 }
 .main__strong {
   display: flex;
@@ -22,6 +26,7 @@
 }
 .main__strong--title {
   @include greentitle;
+  margin-top: 30px;
   &:hover {
     font-size: 24px;
     transform: scale(1.1);
